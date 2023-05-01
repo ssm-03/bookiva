@@ -12,9 +12,11 @@
 }
 
 body{
-    background: #ebebeb;
     display: flex;
+    background: #ebebeb;
+    flex-direction: column;
     width: 100%;
+    align-content: center;
     justify-content: center;
 }
 
@@ -25,6 +27,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    position: fixed;
+    top: 0%;
     /* outline: 1px solid red; */
 }
 
@@ -54,4 +58,84 @@ body{
 
 .nav-link:hover{
     color: #636363;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 17%;
+    gap: 2.5rem;
+}
+
+.home-content h1{
+    text-align: center;
+    color: #272727;
+    font-weight: 600;
+}
+
+.home-content p{
+    text-align: center;
+    color: #414141;
+}
+
+.home-buttons{
+    margin-top: 1.8rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.butt-main{
+    padding: 2%;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.butt-sub{
+    padding: 2%;
+    cursor: pointer;
+}
+
+.navv-main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.hall-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    justify-content: center;
+    align-items: center;   
+}
+
+.hall-info{
+    display: inline-block;
+    width: 100%;
+
+}
+
+.hall-img img{
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+.hall-info h4{
+    display: inline-block;
+    padding: 6%; 
+}
+
+.hall-info p{
+    padding: 0% 0% 0% 6%;
 }
